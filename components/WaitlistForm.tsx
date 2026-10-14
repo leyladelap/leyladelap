@@ -35,20 +35,21 @@ export default function WaitlistForm() {
 
   return (
     <form className="waitlist" onSubmit={submit}>
-      <label className="sr-only" htmlFor="email">Tu correo</label>
+      <label className="sr-only" htmlFor="email">Tu correo electrónico</label>
       <input
         id="email"
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="tu@email.com"
+        autoComplete="email"
         required
       />
       <button type="submit" disabled={state === "loading"}>
-        {state === "loading" ? "entrando..." : "recibir novedades"}
+        {state === "loading" ? "guardando..." : "entrar a la lista"}
       </button>
       <span className="form-note" aria-live="polite">
-        {state === "success" && "Listo. Nos encontramos por aquí."}
+        {state === "success" && "Listo. Te avisaré cuando HALO abra."}
         {state === "error" && "No pude guardar tu correo. Intenta otra vez."}
       </span>
     </form>
