@@ -1,0 +1,19 @@
+.page{min-height:100vh;background:var(--ivory);padding:32px 4vw 48px}
+.shell{max-width:1400px;margin:0 auto;border:1px solid var(--line);background:rgba(251,246,240,.92)}
+.brandRow{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 28px;border-bottom:1px solid var(--line)}
+.logo{width:132px;height:48px;object-fit:contain;object-position:left center;mix-blend-mode:multiply}
+.brandRow span{font-size:10px;letter-spacing:.18em;color:var(--olive)}
+.layout{display:grid;grid-template-columns:1.05fr .95fr;min-height:calc(100vh - 132px)}
+.copy{padding:8vw 6vw 7vw;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.copy:after{content:"";position:absolute;width:420px;height:180px;border:1px solid rgba(110,113,81,.22);border-radius:50%;right:-120px;bottom:55px;transform:rotate(-16deg)}
+.copy h1{font-size:clamp(4rem,7vw,7.4rem);max-width:800px;margin:16px 0 28px}
+.kicker{font-size:10px;letter-spacing:.21em;color:var(--olive);font-weight:600}
+.lead{font-family:Georgia,"Times New Roman",serif;color:var(--cacao);font-size:clamp(1.45rem,2.2vw,2.2rem);line-height:1.32;max-width:700px}
+.detail{margin-top:24px;max-width:620px;color:var(--muted);line-height:1.75}
+.note{margin-top:54px;padding-top:22px;border-top:1px solid var(--line);max-width:620px;display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:start}
+.note span{font-size:10px;letter-spacing:.15em;color:var(--olive)}
+.note p{font-size:.92rem;color:var(--muted)}
+.formCard{background:var(--olive);color:var(--ivory);padding:8vw 5vw 6vw;display:flex;flex-direction:column;justify-content:center}
+.formKicker{font-size:10px;letter-spacing:.2em;color:rgba(251,246,240,.72)}
+.formCard h2{color:var(--ivory);font-size:clamp(2.8rem,4vw,4.6rem);margin:14px 0 34px}
+@media(max-width:900px){.page{padding:0}.shell{border:0}.brandRow{padding:14px 20px}.brandRow span{display:none}.layout{grid-template-columns:1fr}.copy{padding:110px 24px 70px}.copy h1{font-size:clamp(3.4rem,16vw,5.8rem)}.note{grid-template-columns:1fr;gap:8px}.formCard{padding:70px 24px 80px}}
