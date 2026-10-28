@@ -1,5 +1,6 @@
 import Image from "next/image";
 import MeditationSignupForm from "@/components/MeditationSignupForm";
+import styles from "./page.module.css";
 
 export const metadata = {
   title: "Meditación de los domingos | Leyla de la Peña",
@@ -8,9 +9,9 @@ export const metadata = {
 
 export default function MeditationPage() {
   return (
-    <main className="meditation-page">
-      <section className="meditation-shell">
-        <div className="meditation-brand-row">
+    <main className={styles.page}>
+      <section className={styles.shell}>
+        <div className={styles.brandRow}>
           <a href="/" aria-label="Volver a Leyla de la Peña">
             <Image
               src="/logo-primary.png"
@@ -18,31 +19,31 @@ export default function MeditationPage() {
               height={115}
               alt="Leyla de la Peña"
               priority
-              className="meditation-logo"
+              className={styles.logo}
             />
           </a>
           <span>DOMINGOS · MEDITACIÓN GUIADA</span>
         </div>
 
-        <div className="meditation-layout">
-          <div className="meditation-copy">
-            <p className="section-kicker">UN ESPACIO PARA VOLVER A TI</p>
+        <div className={styles.layout}>
+          <div className={styles.copy}>
+            <p className={styles.kicker}>UN ESPACIO PARA VOLVER A TI</p>
             <h1>Meditación de los domingos.</h1>
-            <p className="meditation-lead">
+            <p className={styles.lead}>
               Un encuentro para bajar el ruido, volver al cuerpo y escucharte con un poco más de espacio.
             </p>
-            <p className="meditation-detail">
+            <p className={styles.detail}>
               Regístrate aquí para recibir la información de la práctica. Quiero conocerte un poco antes de encontrarnos, por eso te dejo dos preguntas abiertas.
             </p>
 
-            <div className="meditation-card-note">
+            <div className={styles.note}>
               <span>20 MIN · ONLINE</span>
               <p>No necesitas experiencia previa. Solo un lugar tranquilo y disposición para estar contigo.</p>
             </div>
           </div>
 
-          <div className="meditation-form-card">
-            <p className="meditation-form-kicker">REGISTRO</p>
+          <div className={styles.formCard}>
+            <p className={styles.formKicker}>REGISTRO</p>
             <h2>Reserva tu lugar.</h2>
             <MeditationSignupForm />
           </div>
