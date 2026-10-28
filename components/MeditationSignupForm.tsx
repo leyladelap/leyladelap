@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import styles from "./MeditationSignupForm.module.css";
 
 const SUPABASE_URL = "https://uftpwopqxrhqsrpcguex.supabase.co";
 const SUPABASE_KEY = "sb_publishable_-9tR57jqc0K4dexcv4mJ2A_Zlxu8kxb";
@@ -48,8 +49,8 @@ export default function MeditationSignupForm() {
   }
 
   return (
-    <form className="meditation-form" onSubmit={submit}>
-      <div className="meditation-field">
+    <form className={styles.form} onSubmit={submit}>
+      <div className={styles.field}>
         <label htmlFor="meditation-name">Nombre</label>
         <input
           id="meditation-name"
@@ -62,7 +63,7 @@ export default function MeditationSignupForm() {
         />
       </div>
 
-      <div className="meditation-field">
+      <div className={styles.field}>
         <label htmlFor="meditation-email">Correo</label>
         <input
           id="meditation-email"
@@ -75,7 +76,7 @@ export default function MeditationSignupForm() {
         />
       </div>
 
-      <div className="meditation-field meditation-field-full">
+      <div className={`${styles.field} ${styles.full}`}>
         <label htmlFor="meditation-expectation">¿Qué esperas de la meditación?</label>
         <textarea
           id="meditation-expectation"
@@ -86,7 +87,7 @@ export default function MeditationSignupForm() {
         />
       </div>
 
-      <div className="meditation-field meditation-field-full">
+      <div className={`${styles.field} ${styles.full}`}>
         <label htmlFor="meditation-self">¿Qué te gustaría aprender de ti mismo?</label>
         <textarea
           id="meditation-self"
@@ -97,11 +98,11 @@ export default function MeditationSignupForm() {
         />
       </div>
 
-      <div className="meditation-form-actions">
+      <div className={styles.actions}>
         <button type="submit" disabled={state === "loading"}>
           {state === "loading" ? "guardando..." : "registrarme"}
         </button>
-        <p className="meditation-form-note" aria-live="polite">
+        <p className={styles.note} aria-live="polite">
           {state === "success" && "Listo. Tu lugar quedó registrado."}
           {state === "error" && "No pude guardar tu registro. Intenta de nuevo."}
         </p>
