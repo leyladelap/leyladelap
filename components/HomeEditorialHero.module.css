@@ -1,0 +1,132 @@
+.hero{
+  min-height:100svh;
+  padding:108px 5vw 54px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+  background-color:#FBF6F0;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:min(1800px,100vw) auto;
+  border-bottom:1px solid rgba(94,70,54,.14);
+}
+
+.content{
+  width:min(620px,72vw);
+  min-height:390px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+
+.kicker{
+  margin:0 0 18px;
+  font-size:9px;
+  letter-spacing:.26em;
+  color:#6E7151;
+  font-weight:600;
+}
+
+.symbol{
+  width:min(260px,44vw);
+  height:auto;
+  margin:0 auto 14px;
+}
+
+.wordmark{
+  width:min(430px,68vw);
+  height:auto;
+  object-fit:contain;
+  mix-blend-mode:multiply;
+}
+
+.line{
+  width:72px;
+  height:1px;
+  background:rgba(94,70,54,.42);
+  margin:24px 0 18px;
+}
+
+.tagline{
+  margin:0;
+  max-width:430px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(1.15rem,1.7vw,1.55rem);
+  line-height:1.42;
+  color:#5E4636;
+  font-style:italic;
+}
+
+.actions{
+  display:flex;
+  gap:22px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+.actions a{
+  position:relative;
+  padding:5px 0;
+  font-size:9px;
+  letter-spacing:.16em;
+  color:#5E4636;
+  text-transform:uppercase;
+}
+
+.actions a:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:100%;
+  bottom:0;
+  height:1px;
+  background:#5E4636;
+  transition:right .25s ease;
+}
+
+.actions a:hover:after{right:0}
+
+@media (max-width:900px){
+  .hero{
+    min-height:850px;
+    padding:102px 24px 46px;
+    background-size:auto 760px;
+    background-position:center 88px;
+  }
+
+  .content{
+    width:min(560px,88vw);
+    min-height:360px;
+    padding:26px 24px 30px;
+    background:rgba(251,246,240,.88);
+    backdrop-filter:blur(3px);
+  }
+}
+
+@media (max-width:560px){
+  .hero{
+    min-height:790px;
+    padding:92px 16px 34px;
+    background-size:auto 680px;
+    background-position:center 72px;
+  }
+
+  .content{
+    width:92vw;
+    min-height:330px;
+    padding:24px 18px 26px;
+  }
+
+  .symbol{width:min(210px,58vw)}
+  .wordmark{width:min(360px,78vw)}
+  .tagline{font-size:1.08rem}
+  .actions{gap:15px;margin-top:23px}
+}
