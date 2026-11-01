@@ -6,11 +6,19 @@
   justify-content:center;
   position:relative;
   overflow:hidden;
-  background-color:#FBF6F0;
+  background:#FBF6F0;
+  border-bottom:1px solid rgba(94,70,54,.14);
+}
+
+.frame{
+  position:absolute;
+  inset:94px 3.5vw 42px;
+  background-image:url('/home-frame.jpg');
   background-repeat:no-repeat;
   background-position:center;
-  background-size:min(1800px,100vw) auto;
-  border-bottom:1px solid rgba(94,70,54,.14);
+  background-size:contain;
+  z-index:1;
+  pointer-events:none;
 }
 
 .content{
@@ -34,30 +42,16 @@
 }
 
 .symbol{
-  width:min(260px,44vw);
+  width:min(300px,48vw);
   height:auto;
-  margin:0 auto 14px;
-}
-
-.wordmark{
-  width:min(430px,68vw);
-  height:auto;
-  object-fit:contain;
-  mix-blend-mode:multiply;
-}
-
-.line{
-  width:72px;
-  height:1px;
-  background:rgba(94,70,54,.42);
-  margin:24px 0 18px;
+  margin:0 auto 26px;
 }
 
 .tagline{
   margin:0;
-  max-width:430px;
+  max-width:500px;
   font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(1.15rem,1.7vw,1.55rem);
+  font-size:clamp(1.35rem,2vw,1.9rem);
   line-height:1.42;
   color:#5E4636;
   font-style:italic;
@@ -69,7 +63,7 @@
   justify-content:center;
   align-items:center;
   flex-wrap:wrap;
-  margin-top:28px;
+  margin-top:30px;
 }
 
 .actions a{
@@ -96,37 +90,44 @@
 
 @media (max-width:900px){
   .hero{
-    min-height:850px;
+    min-height:820px;
     padding:102px 24px 46px;
-    background-size:auto 760px;
-    background-position:center 88px;
+  }
+
+  .frame{
+    inset:96px 12px 36px;
+    background-size:auto 690px;
+    background-position:center 10px;
   }
 
   .content{
-    width:min(560px,88vw);
-    min-height:360px;
-    padding:26px 24px 30px;
-    background:rgba(251,246,240,.88);
-    backdrop-filter:blur(3px);
+    width:min(560px,86vw);
+    min-height:350px;
+    padding:24px 22px 28px;
+    background:rgba(251,246,240,.82);
+    backdrop-filter:blur(2px);
   }
 }
 
 @media (max-width:560px){
   .hero{
-    min-height:790px;
+    min-height:760px;
     padding:92px 16px 34px;
-    background-size:auto 680px;
-    background-position:center 72px;
+  }
+
+  .frame{
+    inset:86px 4px 24px;
+    background-size:auto 620px;
+    background-position:center 0;
   }
 
   .content{
-    width:92vw;
-    min-height:330px;
-    padding:24px 18px 26px;
+    width:90vw;
+    min-height:320px;
+    padding:22px 18px 24px;
   }
 
-  .symbol{width:min(210px,58vw)}
-  .wordmark{width:min(360px,78vw)}
-  .tagline{font-size:1.08rem}
-  .actions{gap:15px;margin-top:23px}
+  .symbol{width:min(230px,62vw)}
+  .tagline{font-size:1.16rem}
+  .actions{gap:15px;margin-top:24px}
 }
