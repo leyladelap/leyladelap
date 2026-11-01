@@ -1,3 +1,16 @@
+:global(.header-logo){display:none}
+:global(.brand){width:92px;height:34px;display:flex;align-items:center}
+:global(.brand)::before{
+  content:"";
+  display:block;
+  width:88px;
+  height:28px;
+  background-repeat:no-repeat;
+  background-position:left center;
+  background-size:contain;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 160'%3E%3Cpath d='M16 128C55 125 91 96 127 69C177 31 229 17 281 16C334 15 386 29 420 52C452 74 470 100 464 119C459 136 440 145 421 141C402 137 393 125 398 115C403 105 416 99 430 101' fill='none' stroke='%235E4636' stroke-width='19' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='507' cy='128' r='22' fill='%235E4636'/%3E%3C/svg%3E");
+}
+
 .hero{
   min-height:100svh;
   padding:108px 5vw 54px;
@@ -89,6 +102,9 @@
 .actions a:hover:after{right:0}
 
 @media (max-width:900px){
+  :global(.brand){width:76px;height:30px}
+  :global(.brand)::before{width:72px;height:24px}
+
   .hero{
     min-height:820px;
     padding:102px 24px 46px;
