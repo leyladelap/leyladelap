@@ -9,91 +9,91 @@
   background:#FBF6F0;
   border-bottom:1px solid rgba(94,70,54,.10);
 }
-.frame{position:absolute;inset:90px 2.4vw 30px;z-index:1;pointer-events:none}
+.frame{position:absolute;inset:88px 2.2vw 24px;z-index:1;pointer-events:none}
 .photo{position:absolute;overflow:hidden;background:#FBF6F0}
 .image{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 
-/* TOP EDGE: pale → cool → natural → blush → warm */
-.butterfly{left:1%;top:2%;width:9%;height:16%}
-.turtles{left:13%;top:1%;width:7.5%;height:17%}
-.book{left:23%;top:3%;width:10.8%;height:13%}
-.tree{left:36%;top:1%;width:8.2%;height:17%}
-.pastelWater{left:56.5%;top:1.5%;width:7.6%;height:16%}
-.sunset{right:4.6%;top:2%;width:11.5%;height:14%}
+/* TOP EDGE — alternate neutral, cool, green, soft colour and warm tones */
+.butterfly{left:0;top:0;width:9.5%;height:17%}
+.turtles{left:11.2%;top:0;width:7.7%;height:17%}
+.book{left:20.7%;top:1%;width:11.2%;height:15%}
+.tree{left:34.2%;top:0;width:8.8%;height:17%}
+.pastelWater{left:46%;top:0;width:8.2%;height:17%}
+.lotusWoman{left:58%;top:0;width:8.6%;height:18%}
+.sunset{right:0;top:0;width:20%;height:15.5%}
 
-/* LEFT EDGE: warm → monochrome → green → monochrome */
-.japanBow{left:1%;top:23%;width:8.2%;height:20%}
-.handsFeet{left:12%;top:34%;width:7.8%;height:19%}
-.liliesWater{left:1%;top:56%;width:9%;height:16%}
-.turtle{left:1%;bottom:0;width:9.2%;height:18%}
+/* LEFT EDGE — warm / monochrome / green / monochrome */
+.japanBow{left:0;top:21%;width:8.7%;height:22%}
+.handsFeet{left:0;top:46%;width:8.7%;height:21%}
+.liliesWater{left:0;bottom:19%;width:9.4%;height:18%}
+.turtle{left:0;bottom:0;width:9.5%;height:17%}
 
-/* RIGHT EDGE: warm → green → lilac */
-.lotusWoman{right:0;top:18%;width:7.8%;height:18%}
-.lily{right:.5%;top:40%;width:8%;height:16%}
-.buddhaLotus{right:0;bottom:17%;width:9.5%;height:19%}
+/* RIGHT EDGE — green / lilac / warm */
+.lily{right:0;top:20%;width:8.7%;height:19%}
+.buddhaLotus{right:0;top:43%;width:9.8%;height:21%}
+.vintageWoman{right:0;bottom:0;width:10.5%;height:18%}
 
-/* BOTTOM EDGE: blush → mono → warm portrait → mono → pastel → warm art */
-.foldedBody{left:13%;bottom:0;width:9.2%;height:14%}
-.yogaDance{left:27%;bottom:0;width:8.2%;height:16%}
-.leylaPrayer{left:41%;bottom:0;width:8.6%;height:16%}
-.body{left:55%;bottom:0;width:8.2%;height:16%}
-.waterLily{left:68%;bottom:0;width:9.5%;height:13.5%}
-.vintageWoman{right:7.5%;bottom:0;width:10.2%;height:14.5%}
+/* BOTTOM EDGE — blush / mono / warm portrait / mono / pale water */
+.foldedBody{left:12%;bottom:0;width:10.2%;height:16%}
+.yogaDance{left:25%;bottom:0;width:8.8%;height:17%}
+.leylaPrayer{left:37%;bottom:0;width:9.3%;height:17%}
+.body{left:50%;bottom:0;width:8.8%;height:17%}
+.waterLily{left:62%;bottom:0;width:11%;height:15%}
 
-.content{position:relative;z-index:2;width:min(520px,44vw);display:flex;flex-direction:column;align-items:center;text-align:center;padding:26px 24px 22px;background:rgba(251,246,240,.94)}
-.kicker{margin:0 0 18px;font-size:8px;letter-spacing:.27em;color:#6E7151;font-weight:600}
-.symbol{width:min(150px,15vw);height:auto;margin:0 auto 10px}
-.name{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(1.65rem,2.5vw,2.45rem);line-height:1.05;letter-spacing:-.02em;color:#5E4636}
-.tagline{margin:10px 0 0;max-width:320px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(.78rem,.92vw,.92rem);line-height:1.5;color:#5E4636;font-style:italic}
-.actions{display:flex;gap:22px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:23px}
+.content{position:relative;z-index:2;width:min(500px,42vw);display:flex;flex-direction:column;align-items:center;text-align:center;padding:24px 22px 20px;background:rgba(251,246,240,.95)}
+.kicker{margin:0 0 17px;font-size:8px;letter-spacing:.27em;color:#6E7151;font-weight:600}
+.symbol{width:min(148px,14vw);height:auto;margin:0 auto 9px}
+.name{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(1.65rem,2.45vw,2.4rem);line-height:1.05;letter-spacing:-.02em;color:#5E4636}
+.tagline{margin:9px 0 0;max-width:310px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(.77rem,.9vw,.9rem);line-height:1.5;color:#5E4636;font-style:italic}
+.actions{display:flex;gap:22px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:22px}
 .actions a{position:relative;padding:4px 0;font-size:8px;letter-spacing:.16em;color:#5E4636;text-transform:uppercase}
 .actions a:after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:#5E4636;transition:right .25s ease}
 .actions a:hover:after{right:0}
 
 @media(max-width:1100px){
-  .content{width:min(500px,48vw)}
-  .symbol{width:min(140px,17vw)}
-  .book{width:10%}.pastelWater{left:55.5%;width:7%}
+  .content{width:min(480px,46vw)}
+  .symbol{width:min(138px,16vw)}
+  .sunset{width:18%}
 }
 
 @media(max-width:900px){
   .hero{min-height:820px;padding:96px 16px 36px}
-  .frame{inset:78px 12px 20px}
-  .content{width:min(520px,70vw);padding:24px 16px;background:rgba(251,246,240,.96)}
-  .symbol{width:min(130px,30vw)}.name{font-size:1.9rem}.tagline{font-size:.84rem;max-width:270px}
+  .frame{inset:78px 12px 18px}
+  .content{width:min(500px,68vw);padding:23px 15px;background:rgba(251,246,240,.96)}
+  .symbol{width:min(126px,29vw)}.name{font-size:1.86rem}.tagline{font-size:.83rem;max-width:265px}
 
-  .butterfly{left:1%;top:2%;width:17%;height:13%}
-  .turtles{left:21%;top:1%;width:14%;height:14%}
-  .book{left:39%;top:2%;width:18%;height:11%}
+  .butterfly{left:0;top:1%;width:17%;height:13%}
+  .turtles{left:19%;top:0;width:14%;height:14%}
+  .book{left:36%;top:1%;width:18%;height:11%}
   .tree{display:none}
-  .pastelWater{left:60%;top:1%;width:13%;height:14%}
-  .sunset{right:1%;top:2%;width:22%;height:13%}
+  .pastelWater{left:57%;top:0;width:14%;height:14%}
+  .lotusWoman{display:none}
+  .sunset{right:0;top:1%;width:24%;height:13%}
 
-  .japanBow{left:1%;top:22%;width:15%;height:17%}
-  .handsFeet{left:1%;top:43%;width:15%;height:16%}
-  .liliesWater{left:1%;bottom:19%;width:16%;height:15%}
-  .turtle{left:1%;bottom:1%;width:17%;height:16%}
+  .japanBow{left:0;top:20%;width:15%;height:18%}
+  .handsFeet{left:0;top:42%;width:15%;height:17%}
+  .liliesWater{left:0;bottom:19%;width:16%;height:15%}
+  .turtle{left:0;bottom:0;width:17%;height:16%}
 
-  .lotusWoman{right:1%;top:20%;width:15%;height:16%}
-  .lily{right:1%;top:41%;width:16%;height:15%}
-  .buddhaLotus{right:1%;bottom:18%;width:18%;height:17%}
+  .lily{right:0;top:20%;width:16%;height:16%}
+  .buddhaLotus{right:0;top:43%;width:18%;height:18%}
+  .vintageWoman{right:0;bottom:0;width:18%;height:14%}
 
-  .foldedBody{left:21%;bottom:1%;width:15%;height:13%}
-  .yogaDance{left:39%;bottom:1%;width:15%;height:14%}
+  .foldedBody{left:20%;bottom:0;width:15%;height:13%}
+  .yogaDance{left:38%;bottom:0;width:15%;height:14%}
   .leylaPrayer{display:none}
   .body{display:none}
-  .waterLily{right:23%;bottom:1%;width:17%;height:12%}
-  .vintageWoman{right:4%;bottom:1%;width:17%;height:13%}
+  .waterLily{right:20%;bottom:0;width:18%;height:12%}
 }
 
 @media(max-width:560px){
   .hero{min-height:760px;padding-top:90px}
-  .content{width:74vw;padding:20px 12px}
+  .content{width:72vw;padding:20px 12px}
   .kicker{font-size:7px;margin-bottom:14px}
-  .symbol{width:112px}
-  .name{font-size:1.55rem}
-  .tagline{font-size:.78rem;max-width:225px}
+  .symbol{width:110px}
+  .name{font-size:1.52rem}
+  .tagline{font-size:.77rem;max-width:220px}
   .actions{gap:12px 18px;margin-top:18px}
   .actions a{font-size:7px}
-  .book,.lotusWoman,.waterLily,.foldedBody{display:none}
+  .book,.waterLily,.foldedBody{display:none}
 }
