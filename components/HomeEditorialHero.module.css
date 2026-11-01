@@ -9,38 +9,38 @@
   background:#FBF6F0;
   border-bottom:1px solid rgba(94,70,54,.10);
 }
-.frame{position:absolute;inset:90px 2.2vw 28px;z-index:1;pointer-events:none}
+.frame{position:absolute;inset:90px 2.4vw 30px;z-index:1;pointer-events:none}
 .photo{position:absolute;overflow:hidden;background:#FBF6F0}
 .image{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 
-/* top edge */
-.butterfly{left:1%;top:2%;width:9.5%;height:17%}
-.turtles{left:12.5%;top:1%;width:7.8%;height:18%}
-.book{left:22%;top:3%;width:11%;height:14%}
-.tree{left:34.5%;top:1%;width:8.5%;height:18%}
-.ganesha{left:47%;top:1%;width:7.2%;height:18%}
-.pastelWater{left:57%;top:1%;width:7.5%;height:18%}
-.leylaPrayer{left:67%;top:2%;width:8.1%;height:17%}
-.sunset{right:5%;top:2%;width:12%;height:15%}
+/* TOP EDGE: pale → cool → natural → blush → warm */
+.butterfly{left:1%;top:2%;width:9%;height:16%}
+.turtles{left:13%;top:1%;width:7.5%;height:17%}
+.book{left:23%;top:3%;width:10.8%;height:13%}
+.tree{left:36%;top:1%;width:8.2%;height:17%}
+.pastelWater{left:56.5%;top:1.5%;width:7.6%;height:16%}
+.sunset{right:4.6%;top:2%;width:11.5%;height:14%}
 
-/* side edges */
-.japanBow{left:1%;top:27%;width:8.3%;height:21%}
-.handsFeet{left:12.5%;top:34%;width:8.1%;height:20%}
-.lotusWoman{right:0;top:20%;width:8%;height:18%}
-.lily{right:.5%;top:41%;width:8.2%;height:17%}
-.buddhaLotus{right:0;bottom:17%;width:10%;height:20%}
-.liliesWater{left:1%;bottom:22%;width:9.2%;height:17%}
-.lotusYoga{left:12.8%;bottom:18%;width:7.7%;height:17%}
+/* LEFT EDGE: warm → monochrome → green → monochrome */
+.japanBow{left:1%;top:23%;width:8.2%;height:20%}
+.handsFeet{left:12%;top:34%;width:7.8%;height:19%}
+.liliesWater{left:1%;top:56%;width:9%;height:16%}
+.turtle{left:1%;bottom:0;width:9.2%;height:18%}
 
-/* bottom edge */
-.turtle{left:1%;bottom:0;width:9.5%;height:18%}
-.foldedBody{left:13%;bottom:0;width:9.5%;height:15%}
-.yogaDance{left:27%;bottom:0;width:8.5%;height:17%}
-.body{left:41%;bottom:0;width:8.5%;height:17%}
-.waterLily{right:32%;bottom:0;width:10%;height:14%}
-.vintageWoman{right:19%;bottom:0;width:10%;height:15%}
+/* RIGHT EDGE: warm → green → lilac */
+.lotusWoman{right:0;top:18%;width:7.8%;height:18%}
+.lily{right:.5%;top:40%;width:8%;height:16%}
+.buddhaLotus{right:0;bottom:17%;width:9.5%;height:19%}
 
-.content{position:relative;z-index:2;width:min(520px,44vw);display:flex;flex-direction:column;align-items:center;text-align:center;padding:26px 24px 22px;background:rgba(251,246,240,.93)}
+/* BOTTOM EDGE: blush → mono → warm portrait → mono → pastel → warm art */
+.foldedBody{left:13%;bottom:0;width:9.2%;height:14%}
+.yogaDance{left:27%;bottom:0;width:8.2%;height:16%}
+.leylaPrayer{left:41%;bottom:0;width:8.6%;height:16%}
+.body{left:55%;bottom:0;width:8.2%;height:16%}
+.waterLily{left:68%;bottom:0;width:9.5%;height:13.5%}
+.vintageWoman{right:7.5%;bottom:0;width:10.2%;height:14.5%}
+
+.content{position:relative;z-index:2;width:min(520px,44vw);display:flex;flex-direction:column;align-items:center;text-align:center;padding:26px 24px 22px;background:rgba(251,246,240,.94)}
 .kicker{margin:0 0 18px;font-size:8px;letter-spacing:.27em;color:#6E7151;font-weight:600}
 .symbol{width:min(150px,15vw);height:auto;margin:0 auto 10px}
 .name{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(1.65rem,2.5vw,2.45rem);line-height:1.05;letter-spacing:-.02em;color:#5E4636}
@@ -53,37 +53,36 @@
 @media(max-width:1100px){
   .content{width:min(500px,48vw)}
   .symbol{width:min(140px,17vw)}
-  .ganesha{left:46%;width:7%}.pastelWater{left:56%;width:7%}.leylaPrayer{left:65%;width:7.5%}
+  .book{width:10%}.pastelWater{left:55.5%;width:7%}
 }
 
 @media(max-width:900px){
   .hero{min-height:820px;padding:96px 16px 36px}
   .frame{inset:78px 12px 20px}
-  .content{width:min(520px,70vw);padding:24px 16px;background:rgba(251,246,240,.95)}
+  .content{width:min(520px,70vw);padding:24px 16px;background:rgba(251,246,240,.96)}
   .symbol{width:min(130px,30vw)}.name{font-size:1.9rem}.tagline{font-size:.84rem;max-width:270px}
 
   .butterfly{left:1%;top:2%;width:17%;height:13%}
   .turtles{left:21%;top:1%;width:14%;height:14%}
   .book{left:39%;top:2%;width:18%;height:11%}
   .tree{display:none}
-  .ganesha{left:60%;top:1%;width:13%;height:14%}
-  .pastelWater{display:none}
-  .leylaPrayer{display:none}
+  .pastelWater{left:60%;top:1%;width:13%;height:14%}
   .sunset{right:1%;top:2%;width:22%;height:13%}
 
-  .japanBow{left:1%;top:22%;width:15%;height:18%}
-  .handsFeet{left:1%;top:44%;width:15%;height:16%}
+  .japanBow{left:1%;top:22%;width:15%;height:17%}
+  .handsFeet{left:1%;top:43%;width:15%;height:16%}
+  .liliesWater{left:1%;bottom:19%;width:16%;height:15%}
+  .turtle{left:1%;bottom:1%;width:17%;height:16%}
+
   .lotusWoman{right:1%;top:20%;width:15%;height:16%}
   .lily{right:1%;top:41%;width:16%;height:15%}
   .buddhaLotus{right:1%;bottom:18%;width:18%;height:17%}
-  .liliesWater{display:none}
-  .lotusYoga{left:1%;bottom:19%;width:15%;height:15%}
 
-  .turtle{left:1%;bottom:1%;width:17%;height:16%}
   .foldedBody{left:21%;bottom:1%;width:15%;height:13%}
   .yogaDance{left:39%;bottom:1%;width:15%;height:14%}
+  .leylaPrayer{display:none}
   .body{display:none}
-  .waterLily{right:24%;bottom:1%;width:17%;height:12%}
+  .waterLily{right:23%;bottom:1%;width:17%;height:12%}
   .vintageWoman{right:4%;bottom:1%;width:17%;height:13%}
 }
 
@@ -96,5 +95,5 @@
   .tagline{font-size:.78rem;max-width:225px}
   .actions{gap:12px 18px;margin-top:18px}
   .actions a{font-size:7px}
-  .book,.lotusWoman,.waterLily,.ganesha,.foldedBody{display:none}
+  .book,.lotusWoman,.waterLily,.foldedBody{display:none}
 }
