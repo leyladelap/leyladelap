@@ -5,30 +5,30 @@ import HomeEditorialHero from "@/components/HomeEditorialHero";
 const worlds = [
   {
     num: "01",
-    title: "Volver a ti",
-    text: "Bajar el ruido y volver al cuerpo, la respiración y el presente.",
+    title: "Presencia",
+    text: "Escuchar el cuerpo, la respiración, los pensamientos y las emociones sin exigir respuestas inmediatas.",
   },
   {
     num: "02",
-    title: "Conocerte",
-    text: "Observar tus patrones, preguntas, emociones, límites y forma de habitarte.",
+    title: "Identidad",
+    text: "Explorar las versiones que has sido, las expectativas que cargas y aquello que hoy eliges para ti.",
   },
   {
     num: "03",
-    title: "Expresarte",
-    text: "Dar espacio a tu voz, creatividad, movimiento, estética e identidad.",
+    title: "Vínculos",
+    text: "Observar cómo amas, cómo pones límites y cómo cuidas tu identidad en relación con otros.",
   },
   {
     num: "04",
-    title: "Vivirlo",
-    text: "Llevar lo que descubres a decisiones, relaciones, viajes y vida cotidiana.",
+    title: "Sostén",
+    text: "Dar lugar a tu libertad en decisiones, hábitos y proyectos que puedas sostener en la vida cotidiana.",
   },
 ];
 
 const audienceSignals = [
-  "Funcionas, cumples y haces, pero a veces sientes que vas en automático.",
-  "Quieres bajar la exigencia sin convertirte en una versión nueva de ti.",
-  "Buscas prácticas y experiencias que te ayuden a escucharte con más presencia.",
+  "Tu vida puede estar llena de cosas buenas y, aun así, puedes preguntarte si algunas todavía encajan contigo.",
+  "Tal vez estás cambiando de rumbo, de ciudad, de relación o de forma de entenderte.",
+  "Te interesa conocerte, pero también aprender a elegir y construir desde lo que descubres.",
 ];
 
 const offers = [
@@ -36,22 +36,22 @@ const offers = [
     index: "01",
     status: "SESIÓN PRIVADA",
     title: "Casa Interior",
-    body: "Un espacio 1:1 que reúne yoga, respiración, presencia y experiencia sensorial para acompañarte a volver al cuerpo y escucharte.",
-    detail: "Para quien quiere una experiencia personal y acompañada.",
+    body: "Una sesión individual para explorar lo que estás viviendo mediante yoga restaurativo, respiración, sonido, presencia y conversación.",
+    detail: "Un espacio íntimo para escuchar tus propias preguntas.",
   },
   {
     index: "02",
-    status: "PRÁCTICA A TU RITMO",
+    status: "PRÁCTICA GUIADA",
     title: "Meditaciones",
-    body: "Meditaciones guiadas, respiración y prácticas de quietud para crear pequeños espacios de presencia dentro de tu vida real.",
-    detail: "Para quien quiere empezar por una práctica sencilla y repetible.",
+    body: "Encuentros de meditación, respiración y atención al cuerpo para observar lo que sucede dentro de una vida que sigue moviéndose.",
+    detail: "También puedes inscribirte a la meditación de los domingos.",
   },
   {
     index: "03",
-    status: "PRÓXIMAMENTE",
-    title: "HALO",
-    body: "Una membresía digital recurrente con meditaciones, Yoga Nidra, respiración, sonido, prácticas corporales, contemplaciones y encuentros.",
-    detail: "Para quien quiere profundizar y sostener una práctica en comunidad.",
+    status: "EN PREPARACIÓN",
+    title: "Entre versiones",
+    body: "Una experiencia grupal online para mujeres que atraviesan cambios y desean explorar quiénes han sido, qué sienten y qué vida quieren construir.",
+    detail: "Propuesta de cuatro semanas, con filosofía del yoga, meditación, movimiento y escritura. Sin fechas abiertas todavía.",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function Home() {
       <section className="recognition" aria-labelledby="recognition-title">
         <div className="recognition-heading">
           <p className="section-kicker">PARA QUIÉN ES</p>
-          <h2 id="recognition-title">Puedes estar haciendo todo “bien” y aun así sentir que no estás del todo dentro de tu vida.</h2>
+          <h2 id="recognition-title">Conocerte. Elegirte. Construir.</h2>
         </div>
         <div className="signal-grid">
           {audienceSignals.map((signal, index) => (
@@ -95,7 +95,7 @@ export default function Home() {
           ))}
         </div>
         <p className="recognition-note">
-          Aquí no hay una versión correcta de ti que alcanzar. Hay prácticas, preguntas y experiencias para que puedas escucharte y elegir desde un lugar más consciente.
+          Un universo de autoexploración para mujeres que quieren conocerse más profundamente y construir una vida que se sienta verdaderamente suya.
         </p>
       </section>
 
@@ -106,8 +106,8 @@ export default function Home() {
             <p className="section-overline">CÓMO PUEDES EMPEZAR</p>
           </div>
           <div>
-            <h2 id="experiences-title">Elige la puerta que más se parece a lo que necesitas hoy.</h2>
-            <p className="section-intro">No necesitas empezar por todo. Una sesión, una práctica o una pregunta pueden ser suficiente para abrir espacio.</p>
+            <h2 id="experiences-title">Hay distintas formas de explorar lo que estás viviendo.</h2>
+            <p className="section-intro">Meditación, experiencias individuales y un programa grupal en preparación. Cada propuesta tiene su propio ritmo y un espacio para tus preguntas.</p>
           </div>
         </div>
 
@@ -121,8 +121,8 @@ export default function Home() {
               <h3>{offer.title}</h3>
               <p className="offer-body">{offer.body}</p>
               <p className="offer-detail">{offer.detail}</p>
-              {offer.title === "HALO" ? (
-                <a className="card-link" href="#halo">Entrar a la lista de espera <span>↘</span></a>
+              {offer.title === "Entre versiones" ? (
+                <a className="card-link" href="#halo">Conocer Entre versiones <span>↘</span></a>
               ) : offer.title === "Meditaciones" ? (
                 <a className="card-link" href="/meditacion">Registrarme <span>↘</span></a>
               ) : (
@@ -136,9 +136,9 @@ export default function Home() {
       <section className="method" id="method" aria-labelledby="method-title">
         <div className="method-intro">
           <p className="section-kicker">EL UNIVERSO</p>
-          <h2 id="method-title">Cuatro movimientos. No cuatro pasos obligatorios.</h2>
+          <h2 id="method-title">No hay una sola manera de conocernos.</h2>
           <p>
-            La autoexploración no ocurre en línea recta. A veces vuelves al cuerpo. Otras veces necesitas entenderte, expresarte o simplemente vivir algo distinto. Este universo se organiza alrededor de esas cuatro posibilidades.
+            La identidad, la presencia, los vínculos, la libertad y el sostén se entrelazan. Lo que descubrimos de nosotras también necesita encontrar su lugar en nuestras relaciones, decisiones y vida cotidiana.
           </p>
         </div>
         <div className="worlds">
@@ -156,8 +156,8 @@ export default function Home() {
         <div className="editorial-panel">
           <div className="editorial-copy">
             <p className="section-kicker light">BITÁCORA</p>
-            <h2 id="bitacora-title">Una vida también puede leerse por escenas.</h2>
-            <p>Viajes, historias, filosofía, libros, preguntas, imágenes y pequeñas cosas que merecían quedarse.</p>
+            <h2 id="bitacora-title">Escribo para observar lo que voy viviendo.</h2>
+            <p>Pensamientos, historias, filosofía, preguntas y escenas cotidianas. La Bitácora es un espacio para compartir lo que voy descubriendo en la experiencia de vivir.</p>
           </div>
           <div className="editorial-mark" aria-hidden="true">
             <span>viviendo</span>
@@ -165,9 +165,9 @@ export default function Home() {
           </div>
         </div>
         <aside className="editorial-aside">
-          <p>BITÁCORA ES EL ARCHIVO DEL UNIVERSO.</p>
+          <p>UN ARCHIVO PERSONAL EN CONSTRUCCIÓN.</p>
           <p>Texto · foto · video · audio</p>
-          <p className="aside-note">Un lugar para mirar la experiencia antes de convertirla en conclusión.</p>
+          <p className="aside-note">Un espacio para leer, preguntarnos y dejar algunas cosas sin respuesta.</p>
         </aside>
       </section>
 
@@ -178,19 +178,19 @@ export default function Home() {
           <span className="halo-word">HALO</span>
         </div>
         <div className="halo-content">
-          <p className="section-kicker light">HALO · THE MEMBERSHIP</p>
-          <h2 id="halo-title">Un espacio recurrente para profundizar sin vivir corriendo hacia la siguiente meta.</h2>
+          <p className="section-kicker light">HALO · EN CONSTRUCCIÓN</p>
+          <h2 id="halo-title">Un espacio que está tomando forma.</h2>
           <p className="halo-lead">
-            Meditaciones, Yoga Nidra, respiración, sonido, prácticas corporales, contemplaciones y encuentros dentro de un ritmo más sostenido.
+            HALO es un proyecto en construcción. Por ahora no es una membresía activa y todavía no hay fechas ni contenidos anunciados.
           </p>
           <ul className="halo-list">
-            <li>Prácticas que puedes repetir a tu ritmo.</li>
-            <li>Exploraciones nuevas a lo largo del tiempo.</li>
-            <li>Un espacio para acompañar el proceso, no para prometer resultados rápidos.</li>
+            <li>Un proyecto que todavía está encontrando su forma.</li>
+            <li>Sin inscripciones ni calendario anunciados.</li>
+            <li>Próximamente habrá más información.</li>
           </ul>
           <div className="halo-form-wrap">
-            <p className="halo-form-title">Únete a la lista de espera.</p>
-            <p className="halo-form-copy">Te escribiré cuando HALO esté listo para abrir.</p>
+            <p className="halo-form-title">HALO, próximamente.</p>
+            <p className="halo-form-copy">El formulario existente permite dejar un correo para recibir novedades cuando haya información confirmada.</p>
             <WaitlistForm />
           </div>
         </div>
@@ -202,37 +202,37 @@ export default function Home() {
           <span>YOGA · MEDITACIÓN · RESPIRACIÓN · FILOSOFÍA · SONIDO · EXPERIENCIA</span>
         </div>
         <div className="about-copy">
-          <h2 id="about-title">Este universo nace de haber buscado muchas respuestas y, con el tiempo, aprender a hacer mejores preguntas.</h2>
+          <h2 id="about-title">No llegué aquí porque tuviera todas las respuestas.</h2>
           <div className="about-columns">
             <p>
-              He vivido y estudiado prácticas de yoga y meditación en India, y mi trabajo reúne cuerpo, respiración, filosofía, introspección, sonido, escritura y experiencia cotidiana.
+              Durante mucho tiempo pensé que para entender mi vida necesitaba encontrar respuestas. Y después la vida empezó a hacerme preguntas que no sabía contestar. Perder a mi mamá cambió muchas cosas en la forma en que miraba el tiempo, el amor y la posibilidad de que todo cambie de un día para otro. No fue el comienzo de una historia perfecta de crecimiento. Hubo tristeza, contradicciones y días en los que simplemente no sabía qué hacer con lo que sentía. Empecé a escribir, a observarme y a preguntarme qué significaba estar viva, cómo quería amar y qué cosas merecían mi atención. Algunas preguntas siguen conmigo. Con el tiempo entendí que no todas necesitan una respuesta inmediata.
             </p>
             <p>
-              No me interesa construir una figura de gurú ni darte una fórmula para convertirte en otra persona. Me interesa crear contextos donde puedas bajar el ruido suficiente para escucharte.
+              Los viajes me permitieron conocer otras formas de vivir y también distintas versiones de mí. Pasé diez meses en India, donde profundicé en el yoga, la meditación y la filosofía, y seguí encontrando preguntas en lugares, personas y experiencias que no imaginaba. Mi relación con Dios, la práctica y la escritura no ha sido un camino recto ni una historia de iluminación. También he tenido miedo, he buscado certezas en mis relaciones y me he preguntado cómo amar sin dejar de elegirme. Hoy hay otra pregunta que me acompaña: cómo construir una vida creativa, libre y sostenible, con independencia y raíces, sin perder el disfrute de lo cotidiano. De ahí nace este espacio. Soy profesora de yoga y meditación, formada en Hatha, Ashtanga Vinyasa y Yin, pero lo que comparto no cabe solamente dentro de una clase. A través del cuerpo, la respiración, la filosofía, el sonido, la escritura y las experiencias compartidas, creo espacios para explorar quiénes somos, cómo nos relacionamos y qué queremos construir. No tengo todo resuelto. Sigo aprendiendo a vivir lo que voy descubriendo.
             </p>
           </div>
-          <blockquote>“Encuentra tu ser más auténtico, libre y vive desde ese lugar.”</blockquote>
+          <blockquote>“Conocernos también es aprender a vivir de acuerdo con lo que descubrimos.”</blockquote>
         </div>
       </section>
 
       <section className="books" aria-labelledby="books-title">
         <p className="section-kicker">BOOKS</p>
         <div className="books-grid">
-          <h2 id="books-title">Historias que toman otra forma cuando llegan al papel.</h2>
+          <h2 id="books-title">Un espacio editorial que sigue tomando forma.</h2>
           <div>
-            <p>Mi libro personal está en proceso.</p>
-            <p>También estoy desarrollando proyectos para la infancia alrededor de una tortuga, el agua y los nenúfares.</p>
-            <span className="coming-soon">EDITORIAL PROJECTS · IN DEVELOPMENT</span>
+            <p>Los proyectos de esta sección todavía están en desarrollo.</p>
+            <p>Compartiré más información cuando haya algo concreto que contar.</p>
+            <span className="coming-soon">PROYECTOS EDITORIALES · EN DESARROLLO</span>
           </div>
         </div>
       </section>
 
       <section className="final-cta" aria-labelledby="final-title">
         <p className="section-kicker">SI NO SABES POR DÓNDE EMPEZAR</p>
-        <h2 id="final-title">Empieza por una experiencia que te devuelva al presente.</h2>
+        <h2 id="final-title">Tal vez una conversación, una práctica o una pregunta sea un buen comienzo.</h2>
         <div className="final-actions">
           <a className="button button-primary" href="#experiences">Ver experiencias</a>
-          <a className="button button-secondary" href="#halo">Conocer HALO</a>
+          <a className="button button-secondary" href="#halo">HALO en construcción</a>
         </div>
       </section>
 
